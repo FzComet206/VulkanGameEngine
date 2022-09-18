@@ -15,7 +15,7 @@ namespace lve {
 		LveWindow lveWindow{
 			WIDTH,
 			HEIGHT,
-			"Hi"
+			"Hi Vulkan"
 		};
 	};
 }

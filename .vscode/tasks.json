@@ -3,8 +3,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "build",
-
+            "label": "compile",
             "command": "g++.exe",
 
             "args": [

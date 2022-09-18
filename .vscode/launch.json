@@ -2,10 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Windows launch",
+            "name": "launch engine",
             "program": "${workspaceFolder}/bin/engine.exe",
             "type": "cppdbg",
             "request": "launch",
+            "preLaunchTask": "compile",
             "cwd": "${workspaceFolder}",
             "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe"
         }

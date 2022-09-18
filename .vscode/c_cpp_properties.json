@@ -6,10 +6,8 @@
                 "${workspaceFolder}/src",
                 "${workspaceFolder}/lib/VulkanSDK/1.3.216.0/Include",
                 "${workspaceFolder}/lib/glfw-3.3.8.bin.WIN64/include",
-                "${workspaceFolder}/lib/glm",
+                "${workspaceFolder}/lib/glm"
 
-                "${workspaceFolder}/lib/glfw-3.3.8.bin.WIN64/lib-vc2022",
-                "${workspaceFolder}/lib/VulkanSDK/1.3.216.0/Lib"
             ],
             "defines": [
                 "_DEBUG",
