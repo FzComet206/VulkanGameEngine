@@ -1,6 +1,7 @@
 #pragma once
 
 #include "lve_window.hpp"
+#include "pipeline.hpp"
 
 namespace lve {
 	class FirstApp {
@@ -17,5 +18,6 @@ namespace lve {
 			HEIGHT,
 			"Hi Vulkan"
 		};
+		LvePipeline lvePipeline{"src/shaders/vertex.vert.spv", "src/shaders/fragment.frag.spv"};
 	};
 }
