@@ -10,9 +10,9 @@
 
                 "-g",
                 "-o",
+
                 "${workspaceFolder}/bin/engine.exe",
 
-                // cpp file
                 "${workspaceFolder}/src/*.cpp",
 
                 // includes
@@ -28,13 +28,19 @@
                 "-lglfw3dll",
                 "-lvulkan-1",
             ],
-
-
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-
+        },
+        {
+            "type": "shell",
+            "label": "shaderCompile",
+            "command": "./shaderCompiler.bat"
+        },
+        {
+            "type": "shell",
+            "label": "build",
+            "dependsOn": [
+                "compile",
+                "shaderCompile"
+            ]
         }
     ]
 }

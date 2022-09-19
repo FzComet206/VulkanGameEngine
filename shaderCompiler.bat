@@ -1,0 +1,2 @@
+C:\Users\caozi\Desktop\VulkanApps\VulkanGameEngine\lib\VulkanSDK\1.3.216.0\Bin\glslc.exe src\shaders\vertex.vert -o src\shaders\vertex.vert.spv
+C:\Users\caozi\Desktop\VulkanApps\VulkanGameEngine\lib\VulkanSDK\1.3.216.0\Bin\glslc.exe src\shaders\fragment.frag -o src\shaders\fragment.frag.spv
