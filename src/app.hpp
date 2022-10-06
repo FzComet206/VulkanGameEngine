@@ -1,4 +1,5 @@
 #pragma once
+#include <filesystem>
 
 #include "lve_window.hpp"
 #include "pipeline.hpp"
@@ -18,6 +19,9 @@ namespace lve {
 			HEIGHT,
 			"Hi Vulkan"
 		};
-		LvePipeline lvePipeline{"src/shaders/vertex.vert.spv", "src/shaders/fragment.frag.spv"};
+		LvePipeline lvePipeline{
+			std::filesystem::current_path().string() + "\\vertex.vert.spv",
+			std::filesystem::current_path().string() + "\\fragment.frag.spv",
+			};
 	};
 }

@@ -15,7 +15,7 @@ namespace lve {
 		// tell glfw to not create opengl context
 		glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
 		// tell glfw to disable our window from being resized during creation, because we will resize windows in another way later
-		glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE);
+		glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
 
 		window = glfwCreateWindow(width, height, windowName.c_str(), nullptr, nullptr);
 	}

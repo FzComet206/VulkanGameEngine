@@ -6,8 +6,8 @@
             "program": "${workspaceFolder}/bin/engine.exe",
             "type": "cppdbg",
             "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe"
+            "cwd": "${workspaceFolder}/bin",
+            "miDebuggerPath": "gdb.exe"
         }
     ]
 }
