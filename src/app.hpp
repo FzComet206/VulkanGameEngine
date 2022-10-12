@@ -19,9 +19,15 @@ namespace lve {
 			HEIGHT,
 			"Hi Vulkan"
 		};
+
+		// takes window as constructor argument
+		LveDevice lveDevice{lveWindow};
+
 		LvePipeline lvePipeline{
+			lveDevice,
 			std::filesystem::current_path().string() + "\\vertex.vert.spv",
 			std::filesystem::current_path().string() + "\\fragment.frag.spv",
+			LvePipeline::defaultPipelineConfigInfo(WIDTH, HEIGHT)
 			};
 	};
 }
